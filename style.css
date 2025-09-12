@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background: linear-gradient(45deg, #007bff, #0056b3); /* Degradado de color */
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+}
+
+.card {
+    border: none; /* Eliminar el borde de las tarjetas */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
