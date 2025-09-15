@@ -1,8 +1,10 @@
+/* Estilos generales del cuerpo */
 body {
     background-color: #f8f9fa; /* Color de fondo gris claro */
     font-family: Arial, sans-serif;
 }
 
+/* Estilos para el encabezado Jumbotron de Bootstrap */
 .jumbotron {
     background: linear-gradient(45deg, #007bff, #0056b3); /* Degradado de color */
 }
@@ -11,6 +13,7 @@ body {
     font-weight: bold;
 }
 
+/* Estilos para las tarjetas de contenido */
 .card {
     border: none; /* Eliminar el borde de las tarjetas */
     border-radius: 15px;
@@ -19,4 +22,38 @@ body {
 
 .card:hover {
     transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilos para el logo y el título en el encabezado.
+ * Este es el código que solicitaste.
+ */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-content img {
+    max-width: 80px; /* Logo mucho más pequeño */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: flex-start; /* Alinear a la izquierda */
+        align-items: flex-end; /* Alinear el texto con el logo en la parte inferior */
+        gap: 20px; /* Espacio entre el logo y el texto */
+    }
+
+    .header-content img {
+        margin-bottom: 0;
+    }
+
+    .text-content {
+        text-align: left;
+    }
 }
