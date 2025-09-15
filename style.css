@@ -36,7 +36,7 @@ body {
 }
 
 .header-content img {
-    max-width: 80px; /* Logo mucho más pequeño */
+    max-width: 80px !important; /* Logo mucho más pequeño */
     height: auto;
     margin-bottom: 10px;
 }
