@@ -1,12 +1,12 @@
 /* Estilos generales del cuerpo */
 body {
-    background-color: #f8f9fa; /* Color de fondo gris claro */
+    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
 }
 
 /* Estilos para el encabezado Jumbotron de Bootstrap */
 .jumbotron {
-    background: linear-gradient(45deg, #007bff, #0056b3); /* Degradado de color */
+    background: linear-gradient(45deg, #007bff, #0056b3);
 }
 
 .jumbotron h1 {
@@ -15,45 +15,42 @@ body {
 
 /* Estilos para las tarjetas de contenido */
 .card {
-    border: none; /* Eliminar el borde de las tarjetas */
+    border: none;
     border-radius: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    transform: translateY(-5px);
 }
 
-/* Estilos para el logo y el título en el encabezado.
- * Código corregido para un balance entre tamaño y alineación.
- */
+/* Estilos para el nuevo diseño del encabezado */
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    justify-content: flex-start; /* Alinea todo a la izquierda */
+    gap: 20px; /* Espacio entre el logo y el resto del contenido */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-.header-content img {
-    max-width: 120px; /* Tamaño más equilibrado */
+.logo-container img {
+    max-width: 150px; /* Tamaño más visible y profesional */
     height: auto;
-    margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-    .header-content {
-        flex-direction: row;
-        justify-content: flex-start; /* Alinea a la izquierda */
-        align-items: center; /* Alineación vertical al centro */
-        gap: 20px; /* Espacio entre el logo y el texto */
-    }
+.text-content {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: left;
+}
 
-    .header-content img {
-        margin-bottom: 0;
+@media (max-width: 767px) {
+    .header-content {
+        flex-direction: column; /* Apila el logo y el texto en pantallas móviles */
+        text-align: center;
+        align-items: center;
     }
 
     .text-content {
-        text-align: left;
+        text-align: center;
     }
 }
