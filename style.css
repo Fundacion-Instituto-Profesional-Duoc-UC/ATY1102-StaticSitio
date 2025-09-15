@@ -34,7 +34,7 @@ body {
 }
 
 .logo-container img {
-    max-width: 150px; /* Tamaño más visible y profesional */
+    max-width: 120px !important; /* Tamaño más visible y profesional */
     height: auto;
 }
 
