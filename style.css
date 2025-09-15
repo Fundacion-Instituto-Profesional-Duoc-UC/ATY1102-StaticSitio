@@ -24,33 +24,30 @@ body {
     transform: translateY(-5px);
 }
 
-/* Estilos para el nuevo diseño del encabezado */
+/* Estilos para el diseño del encabezado (revisados) */
 .header-content {
     display: flex;
-    align-items: center;
+    align-items: center; /* Centra verticalmente el logo y el texto */
     justify-content: flex-start; /* Alinea todo a la izquierda */
-    gap: 20px; /* Espacio entre el logo y el resto del contenido */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.logo-container img {
-    max-width: 120px !important; /* Tamaño más visible y profesional */
+.header-content img {
+    max-width: 150px; /* Incrementa el tamaño del logo para que sea más visible */
     height: auto;
 }
 
+/* Este bloque CSS es crucial para la alineación del texto */
 .text-content {
-    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    flex: 1;
     text-align: left;
 }
 
 @media (max-width: 767px) {
     .header-content {
-        flex-direction: column; /* Apila el logo y el texto en pantallas móviles */
+        flex-direction: column; /* Apila los elementos en móviles */
         text-align: center;
         align-items: center;
-    }
-
-    .text-content {
-        text-align: center;
     }
 }
